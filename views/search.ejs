@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="uz">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sherik qidirish - Tafakkur Arenasi</title>
+    <link rel="stylesheet" href="/css/output.css" />
+    <script>
+      function startSearch() {
+        document.getElementById("searching").classList.remove("hidden");
+        document.getElementById("searchButton").classList.add("hidden");
+        setTimeout(() => {
+          window.location.href = "/match-found";
+        }, 3000);
+      }
+    </script>
+  </head>
+  <body
+    class="bg-gradient-to-br from-purple-100 to-pink-200 min-h-screen flex flex-col items-center"
+  >
+    <!-- HEADER -->
+    <header class="w-full py-6 bg-purple-900 text-white text-center">
+      <h1 class="text-3xl font-extrabold">Sherik Qidirish</h1>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main class="mt-10 w-full max-w-xl mx-auto text-center">
+      <h2 class="text-2xl font-semibold text-purple-900 mb-6">
+        Sherik topish jarayoni...
+      </h2>
+
+      <button
+        id="searchButton"
+        onclick="startSearch()"
+        class="bg-green-500 text-white text-lg px-8 py-4 rounded-full font-bold shadow-lg hover:bg-green-600 transition transform hover:scale-110"
+      >
+        Sherik izlashni boshlash 🔎
+      </button>
+
+      <div id="searching" class="hidden mt-6">
+        <p class="text-lg text-gray-700">Sherik qidirilmoqda...</p>
+        <img
+          src="/img/loading.gif"
+          class="w-16 mx-auto mt-4"
+          alt="Yuklanmoqda"
+        />
+      </div>
+    </main>
+  </body>
+</html>

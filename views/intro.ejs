@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="uz">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%= title %></title>
+    <link rel="stylesheet" href="/css/output.css" />
+  </head>
+  <body
+    class="bg-gradient-to-br from-blue-100 to-purple-200 min-h-screen flex flex-col items-center"
+  >
+    <!-- HEADER -->
+    <header
+      class="relative w-full h-[360px] flex flex-col items-center justify-center"
+    >
+      <img
+        src="/img/main-bg.webp"
+        alt="Background"
+        class="absolute top-0 left-0 w-full h-full object-cover opacity-40"
+      />
+      <div class="relative flex items-center space-x-4">
+        <img
+          class="rounded-full w-20 h-20 shadow-lg"
+          src="/img/project-logo.webp"
+          alt="Logo"
+        />
+        <span class="text-3xl font-sans font-extrabold text-purple-700"
+          >Tafakkur Arenasi</span
+        >
+      </div>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main class="text-center mt-10">
+      <h1 class="text-3xl font-bold text-blue-900 mb-4">
+        Raqobatga tayyormisiz? 🤔 Unday bo'lsa arenaga xush kelibsiz!
+      </h1>
+      <p class="text-gray-700 mb-6 text-lg">
+        Matematika va mantiqiy fikrlash bo‘yicha bilimlaringizni sinang.
+      </p>
+
+      <a
+        href="/auth/google"
+        class="flex items-center w-[250px] ls:w-[350px] ml-auto mr-auto bg-white text-black px-6 py-3 rounded-full shadow-md border-2 hover:bg-purple-700 hover:text-white transition transform hover:scale-105"
+      >
+        <img
+          class="w-6 mr-3"
+          src="https://eticket.railway.uz/uz/assets/img/svg/google.svg"
+          alt="Google"
+        />
+        <span class="text-lg font-semibold">Google orqali kirish</span>
+      </a>
+
+      <div class="mt-8">
+        <!-- <a
+          href="/start"
+          class="inline-block bg-yellow-400 text-white text-lg px-8 py-4 rounded-full font-bold shadow-lg hover:bg-yellow-500 transition transform hover:scale-110"
+        >
+          Raqobatni boshlash 🚀
+        </a> -->
+      </div>
+    </main>
+  </body>
+</html>
