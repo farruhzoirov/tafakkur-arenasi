@@ -1,5 +1,6 @@
-import { Controller, Get, Render } from "@nestjs/common";
+import { Controller, Get, Render, Req } from "@nestjs/common";
 import { AppService } from "./app.service";
+import { Request } from "express";
 
 @Controller()
 export class AppController {
@@ -15,7 +16,7 @@ export class AppController {
 
   @Get("/main")
   @Render("main")
-  renderMainPage() {
+  renderMainPage(@Req() req: Request) {
     return {
       title: "Asosiy sahifaga xush kelibsiz!",
     };
